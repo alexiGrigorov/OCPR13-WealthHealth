@@ -1,0 +1,1 @@
+import{j as e,H as t,c as r}from"./Header-BQKYdVJw.js";function o(){return e.jsx(e.Fragment,{children:e.jsx(t,{title:"Current Employees",link:{url:"./index.html",description:"Back to Employee Creation"}})})}r.createRoot(document.getElementById("root")).render(e.jsx(o,{}));
