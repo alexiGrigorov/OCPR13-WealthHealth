@@ -1,8 +1,21 @@
+import Header from "../components/Header.jsx";
+
+import EmployeeCreationForm from "../components/Forms/EmployeeCreation.jsx";
+
 export default function HomePage() {
   return (
-    <div>
-      <h1>Index</h1>
-      <a href="/employee-list.html">Employee List</a>
-    </div>
+    <>
+      <Header
+        className={"container"}
+        title="HRnet"
+        link={{
+          url: "./employee-list.html",
+          description: "View Current Employees",
+        }}
+      />
+      <main className="container">
+        <EmployeeCreationForm className=" flow" />
+      </main>
+    </>
   );
 }

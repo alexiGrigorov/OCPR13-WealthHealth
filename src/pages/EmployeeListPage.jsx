@@ -1,8 +1,15 @@
+import Header from "../components/Header.jsx";
+
 export default function EmployeeListPage() {
   return (
-    <div>
-      <h1>Employee List</h1>
-      <a href="/index.html">Home</a>
-    </div>
+    <>
+      <Header
+        title="Current Employees"
+        link={{
+          url: "./index.html",
+          description: "Back to Employee Creation",
+        }}
+      />
+    </>
   );
 }
