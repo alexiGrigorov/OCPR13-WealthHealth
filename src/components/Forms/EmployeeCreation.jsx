@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Modal from "../Modal";
+
 import PersonalInformationInputs from "./FieldGroupings/PersonalInformation";
 import AddressInputs from "./FieldGroupings/Address";
 import EmploymentDetailsInputs from "./FieldGroupings/EmploymentDetails";
@@ -9,6 +11,7 @@ export default function EmployeeCreationForm({
   className = "",
 }) {
   const [employee, setEmployee] = useState({});
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleChange = (field, value) => {
     setEmployee((prev) => ({ ...prev, [field]: value }));
@@ -19,6 +22,7 @@ export default function EmployeeCreationForm({
     const storedEmployees = JSON.parse(localStorage.getItem("employees")) || [];
     storedEmployees.push(employee);
     localStorage.setItem("employees", JSON.stringify(storedEmployees));
+    setIsModalOpen(true);
   };
 
   return (
@@ -57,6 +61,9 @@ export default function EmployeeCreationForm({
         />
 
         <input type="submit" value="Save" className="mx-auto" />
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          "Employee Created!"
+        </Modal>
       </form>
     </section>
   );

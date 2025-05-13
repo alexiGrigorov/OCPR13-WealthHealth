@@ -1,5 +1,5 @@
 import FormSection from "./FormSection";
-import { DEPARTMENTS } from "../../../constants/departments";
+import { DEPARTMENTS } from "../../../constants/departments.js";
 
 export default function EmploymentDetailsInputs({
   values,
@@ -22,9 +22,13 @@ export default function EmploymentDetailsInputs({
       <select
         id="department"
         name="department"
+        value={values.department ?? ""}
         onChange={(event) => onChange("department", event.target.value)}
         required={required}
       >
+        <option value="" disabled hidden>
+          Select a department…
+        </option>
         {DEPARTMENTS.map((department) => (
           <option key={department.code} value={department.name}>
             {department.name}

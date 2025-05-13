@@ -50,7 +50,7 @@ export default [
   },
   {
     name: "React refresh configs",
-    plugins: { refresh },
+    plugins: { "react-refresh": refresh },
     rules: {
       ...refresh.configs.recommended.rules,
     },

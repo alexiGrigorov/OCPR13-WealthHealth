@@ -14,6 +14,7 @@ export default function AddressInputs({
         id="street"
         name="street"
         type="text"
+        value={values.street ?? ""}
         onChange={(event) => onChange("street", event.target.value)}
         required={required}
       />
@@ -22,6 +23,7 @@ export default function AddressInputs({
         id="city"
         name="city"
         type="text"
+        value={values.city ?? ""}
         onChange={(event) => onChange("city", event.target.value)}
         required={required}
       />
@@ -29,9 +31,13 @@ export default function AddressInputs({
       <select
         id="state"
         name="state"
+        value={values.state ?? ""}
         onChange={(event) => onChange("state", event.target.value)}
         required={required}
       >
+        <option value="" disabled hidden>
+          Select a state…
+        </option>
         {STATES.map((state) => (
           <option key={state.abbreviation} value={state.abbreviation}>
             {state.name}
@@ -43,6 +49,7 @@ export default function AddressInputs({
         id="zip-code"
         name="zipCode"
         type="number"
+        value={values.zipCode ?? ""}
         onChange={(event) => onChange("zipCode", event.target.value)}
         required={required}
       />

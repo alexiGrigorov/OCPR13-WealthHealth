@@ -9,6 +9,10 @@
   justify-content: center;
 }
 
+.container > * {
+  max-width: 1029px;
+}
+
 label,
 input {
   display: block;

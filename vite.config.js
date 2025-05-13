@@ -8,7 +8,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   // plugins: [react(), svgr(), tailwindcss()],
   plugins: [react()],
-  base: "/OCPR13-WealthHealth/",
+  base: "/OCPR13-WealthHealth/new/",
   build: {
     outDir: "dist/new",
     emptyOutDir: true,
