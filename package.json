@@ -22,8 +22,8 @@
   },
   "homepage": "https://github.com/alexiGrigorov/OCPR13-WealthHealth#readme",
   "dependencies": {
+    "@alexigrigorov/ocpr13-wealthhealth-modal": "^1.0.0",
     "@reduxjs/toolkit": "^2.8.1",
-    "ocpr13-wealthhealth-modal": "github:alexiGrigorov/OCPR13-WealthHealth-Modal#v0.1.3",
     "react": "^19.1.0",
     "react-data-table-component": "^7.7.0",
     "react-dom": "^19.1.0",

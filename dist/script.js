@@ -312,8 +312,7 @@ function generateEmployee() {
 
 function updateCounter() {
   const data = JSON.parse(localStorage.getItem("employees") || "[]");
-  document.getElementById("counter").textContent =
-    `Entries in Database: ${data.length}`;
+  document.getElementById("counter").textContent = data.length;
 }
 
 function addEmployees() {

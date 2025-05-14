@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { addEmployee } from "../../store/employeesSlice";
 
-import { Modal } from "ocpr13-wealthhealth-modal";
+import { Modal } from "@alexigrigorov/ocpr13-wealthhealth-modal";
 
 import PersonalInformationInputs from "./FieldGroupings/PersonalInformation";
 import AddressInputs from "./FieldGroupings/Address";
