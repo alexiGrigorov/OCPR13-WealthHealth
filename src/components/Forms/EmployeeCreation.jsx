@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import Modal from "../Modal";
+import { Modal } from "ocpr13-wealthhealth-modal";
 
 import PersonalInformationInputs from "./FieldGroupings/PersonalInformation";
 import AddressInputs from "./FieldGroupings/Address";
@@ -61,7 +61,12 @@ export default function EmployeeCreationForm({
         />
 
         <input type="submit" value="Save" className="mx-auto" />
-        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+        <Modal
+          isOpen={isModalOpen}
+          onClose={() => setIsModalOpen(false)}
+          className="modal-dialog"
+        >
+          <Modal.CloseButton className="modal-button" />
           "Employee Created!"
         </Modal>
       </form>

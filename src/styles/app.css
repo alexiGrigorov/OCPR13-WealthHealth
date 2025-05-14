@@ -33,3 +33,15 @@ select {
 .mx-auto {
   margin-inline: auto;
 }
+
+.modal-dialog {
+  border: 1px solid #767676;
+  overflow: visible;
+}
+
+.modal-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+}
