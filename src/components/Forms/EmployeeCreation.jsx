@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { addEmployee } from "../../store/employeesSlice";
 
 import { Modal } from "ocpr13-wealthhealth-modal";
 
@@ -11,6 +13,7 @@ export default function EmployeeCreationForm({
   className = "",
 }) {
   const [employee, setEmployee] = useState({});
+  const dispatch = useDispatch();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleChange = (field, value) => {
@@ -19,9 +22,8 @@ export default function EmployeeCreationForm({
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    const storedEmployees = JSON.parse(localStorage.getItem("employees")) || [];
-    storedEmployees.push(employee);
-    localStorage.setItem("employees", JSON.stringify(storedEmployees));
+    // → dispatch into Redux; persistence is handled by our subscriber
+    dispatch(addEmployee(employee));
     setIsModalOpen(true);
   };
 

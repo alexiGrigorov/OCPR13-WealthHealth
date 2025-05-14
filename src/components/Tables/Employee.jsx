@@ -1,23 +1,14 @@
-import { useState, useEffect, useMemo } from "react";
+import { useState, useMemo } from "react";
+import { useSelector } from "react-redux";
+
 import DataTable from "react-data-table-component";
 
 import { camelToTitle } from "../utilities/strings";
 
 export default function EmployeeTable() {
-  const [employees, setEmployees] = useState([]);
+  // 1) Read employees from Redux store
+  const employees = useSelector((state) => state.employees);
   const [filterText, setFilterText] = useState("");
-
-  // 1) load from localStorage once
-  useEffect(() => {
-    const raw = localStorage.getItem("employees");
-    if (raw) {
-      try {
-        setEmployees(JSON.parse(raw));
-      } catch (err) {
-        console.error("Could not parse employees JSON", err);
-      }
-    }
-  }, []);
 
   // 2) derive a flat set of all keys across your objects
   const columns = useMemo(() => {
