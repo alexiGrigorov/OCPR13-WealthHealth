@@ -51,6 +51,62 @@ _Classé du plus grand au plus faible % d’amélioration_
 
 ---
 
+### Tableau — page de 0 entrées
+
+#### Bureau
+
+_Triés du plus grand au plus faible % d’amélioration_
+
+- **Temps total de blocage :** 20 ms → 0 ms (−20 ms, réduction de **100 %**)
+- **Temps jusqu’à l’interactivité :** 0,64 s → 0,37 s (−0,27 s, **42 %** plus rapide)
+- **Plus grand rendu de contenu :** 0,61 s → 0,37 s (−0,23 s, **39 %** plus rapide)
+- **Premier rendu de contenu :** 0,56 s → 0,37 s (−0,19 s, **34 %** plus rapide)
+- **Indice de vitesse :** 0,56 s → 0,37 s (−0,19 s, **34 %** plus rapide)
+- **Score de performance :** 100 → 100 (aucun changement)
+- **Déplacement cumulatif de mise en page :** 0 → 0 (inchangé)
+
+#### Mobile
+
+_Triés du plus grand au plus faible % d’amélioration_
+
+- **Temps total de blocage :** 159 ms → 90 ms (−69 ms, **43 %** plus rapide)
+- **Plus grand rendu de contenu :** 2,40 s → 1,61 s (−0,79 s, **33 %** plus rapide)
+- **Premier rendu de contenu :** 2,27 s → 1,61 s (−0,66 s, **29 %** plus rapide)
+- **Temps jusqu’à l’interactivité :** 2,53 s → 1,93 s (−0,60 s, **24 %** plus rapide)
+- **Indice de vitesse :** 4,20 s → 3,79 s (−0,41 s, **10 %** plus rapide)
+- **Score de performance :** 91 → 97 (+ 6 pt, **7 %** de gain)
+- **Déplacement cumulatif de mise en page :** 0 → 0 (inchangé)
+
+---
+
+### Tableau — page de 100 entrées
+
+#### Bureau
+
+_Triés du plus grand au plus faible % d’amélioration_
+
+- **Déplacement cumulatif de mise en page :** 0,0002 → 0 (−0,0002, réduction de **100 %**)
+- **Temps total de blocage :** 49 ms → 1,5 ms (−47,5 ms, réduction de **97 %**)
+- **Plus grand rendu de contenu :** 0,62 s → 0,37 s (−0,25 s, **41 %** plus rapide)
+- **Indice de vitesse :** 0,61 s → 0,39 s (−0,21 s, **35 %** plus rapide)
+- **Premier rendu de contenu :** 0,56 s → 0,37 s (−0,19 s, **35 %** plus rapide)
+- **Temps jusqu’à l’interactivité :** 0,68 s → 0,47 s (−0,21 s, **31 %** plus rapide)
+- **Score de performance :** 100 → 100 (aucun changement)
+
+#### Mobile
+
+_Triés du plus grand au plus faible % d’amélioration_
+
+- **Temps total de blocage :** 0,43 s → 0,26 s (−0,17 s, **39 %** plus rapide)
+- **Plus grand rendu de contenu :** 2,42 s → 1,57 s (−0,85 s, **35 %** plus rapide)
+- **Premier rendu de contenu :** 2,16 s → 1,49 s (−0,67 s, **31 %** plus rapide)
+- **Temps jusqu’à l’interactivité :** 2,69 s → 2,07 s (−0,62 s, **23 %** plus rapide)
+- **Score de performance :** 83 → 92 (+ 9 pt, **11 %** de gain)
+- **Indice de vitesse :** 4,08 s → 3,91 s (−0,17 s, **4 %** plus rapide)
+- **Déplacement cumulatif de mise en page :** 0 → 0 (inchangé)
+
+---
+
 ## Conclusions
 
 - **Succès remarquables :**
