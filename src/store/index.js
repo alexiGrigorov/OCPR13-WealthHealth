@@ -12,7 +12,7 @@ export const store = configureStore({
   preloadedState,
 });
 
-// 2. Persist on changes (throttled to once per second)
+// 2. Persist on changes
 store.subscribe(() => {
   saveState(store.getState());
 });
